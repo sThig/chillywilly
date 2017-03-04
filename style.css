@@ -99,5 +99,87 @@ body {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  
+  left: 130px;
+  top: 130px;
+  z-index: 9;
+  border-radius: 15%;
+}
+
+.beak span:nth-child(2) {
+  width: 50px;
+  height: 10px;
+  border-bottom: 5px solid #262626;
+  position: absolute;
+  top: 138px;
+  left: 123px;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+.cheeks span {
+  width: 30px;
+  height: 15px;
+  border-radius: 50%;
+  background: pink;
+  position: absolute;
+  top: 145px;
+  z-index: 99;
+}
+
+.cheeks span:nth-child(1){
+  left: 54px;
+}
+
+.cheeks span:nth-child(2){
+  right: 54px;
+}
+
+.feet span {
+  width: 40px;
+  height: 90px;
+  position: absolute;
+  background: #f5b81f;
+  border-radius: 50%;
+  bottom: -42px;
+  z-index: -1;
+}
+
+.feet span:nth-child(1){
+  -webkit-transform: rotate(77deg);
+  -ms-transform: rotate(77deg);
+  transform: rotate(77deg);
+  left: 60px;
+}
+
+.feet span:nth-child(2){
+  -webkit-transform: rotate(-77deg);
+  -ms-transform: rotate(-77deg);
+  transform: rotate(-77deg);
+  right: 60px;
+}
+
+.wings span {
+  width: 40px;
+  height: 90px;
+  position: absolute;
+  background: #465a65;
+  border-radius: 50%;
+  top: 136px;
+  z-index: -1;
+}
+
+.wings span:nth-child(1){
+  left: -30px;
+  -webkit-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  transform: rotate(140deg);
+  border-bottom-left-radius: 100%;
+}
+
+.wings span:nth-child(2){
+  right: -30px;
+  -webkit-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
+  transform: rotate(-140deg);
+  border-bottom-right-radius: 100%;
 }
