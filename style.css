@@ -78,7 +78,7 @@ body {
 
 .eyes span:nth-child(1) {left: 70px;}
 
-.eyes span:nth-child(2) {left: 70px;}
+.eyes span:nth-child(2) {right: 70px;}
 
 .eyes span::after {
   content: '';
@@ -89,4 +89,15 @@ body {
   border-radius: 50%;
   top: 8px;
   left: 9px;
+}
+
+.beak span:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  background: #f5b815;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  
 }
