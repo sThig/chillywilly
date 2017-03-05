@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="penguin_container">
-      <div id="body" class="body stop">
+      <div class="body stop">
         <div class="wings">
           <span></span>
           <span></span>
@@ -52,17 +52,17 @@
 
     console.log('bodyRect', bodyRect);
     fly.addEventListener('mouseover', () => {
+      fly.classList.remove('flappy');
       fly.classList.add('movin');
-      fly.classList.remove('stop');
       const y = fly.getBoundingClientRect();
       const offset = y.top - bodyRect.top;
       console.log('offset', offset);
-
     });
 
     fly.addEventListener('mouseout', () => {
-      fly.classList.add('stop');
-      // fly.classList.remove('movin');
+      fly.classList.add('flappy');
+      fly.classList.remove('movin');
+      fly.style.bottom = y - bodyRect + "px";
     });
 
   </script>

@@ -29,8 +29,8 @@ body {
   animation: MoveUpDown 1s linear forwards;
 }
 
-.stop{
-  animation: MoveDownUp 1s linear reverse;
+.flappy{
+  animation: MoveUpDown 1s linear reverse;
 }
 
 .belly {
@@ -205,9 +205,9 @@ body {
 
   }
 
-  @keyframes MoveDownUp {
+  /*@keyframes MoveDownUp {
     0% {
-        top:-100;
+        top:0;
         -webkit-animation-timing-function: ease-in;
        }
 
@@ -216,4 +216,4 @@ body {
       -webkit-animation-timing-function: ease-in;
        }
 
-    }
+    }*/
