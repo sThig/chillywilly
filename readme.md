@@ -8,9 +8,3 @@ I'm teaching myself some CSS stuff, some things are good some things are hard.  
 * nth child is fun, and super userful
 * I feel like I could make the wings flap with js, I may revist things
 * I learned how to put emojis in README.MD :bowtie:
-
-# TESTING MARKUP
-
-```<language identifier>
-//  your code block here
-```
