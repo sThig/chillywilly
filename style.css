@@ -11,6 +11,7 @@ body {
   right: 0;
   width: 333px;
   top: 15%;
+  transition:all 0.4s;
 }
 
 .body {
@@ -26,12 +27,15 @@ body {
 }
 
 .movin{
-  animation: MoveUpDown 1s linear forwards;
+  top:0;
 }
 
-.flappy{
-  animation: MoveUpDown 1s linear reverse;
+.movinonup{
+
 }
+/*.flappy{
+  animation: MoveUpDown 1s linear reverse;
+}*/
 
 .belly {
   width: 240px;
@@ -192,7 +196,7 @@ body {
   border-bottom-right-radius: 100%;
 }
 
-@keyframes MoveUpDown {
+/*@keyframes MoveUpDown {
   0% {
       top:0;
       -webkit-animation-timing-function: ease-in;
@@ -203,7 +207,7 @@ body {
     -webkit-animation-timing-function: ease-in;
      }
 
-  }
+  }*/
 
   /*@keyframes MoveDownUp {
     0% {
