@@ -47,18 +47,21 @@
   </body>
   <script type = 'text/javascript'>
     const fly = document.querySelector('.penguin_container');
+    const wingsRight = document.querySelector('.wings span:nth-child(2)');
+    const wingsLeft = document.querySelector('.wings span:nth-child(1)');
     const bodyRect = document.body.getBoundingClientRect();
     const y = fly.getBoundingClientRect();
 
     fly.addEventListener('mouseover', () => {
       fly.classList.add('movin');
-      // const y = fly.getBoundingClientRect();
-      // const offset = y.top - bodyRect.top;
-      // console.log('offset', offset);
+      wingsRight.classList.add('flappy-right')
+      wingsLeft.classList.add('flappy-left')
     });
 
     fly.addEventListener('mouseout', () => {
       fly.classList.remove('movin');
+      wingsRight.classList.remove('flappy-right');
+      wingsLeft.classList.remove('flappy-left');
       // fly.style.bottom = y - bodyRect + "px";
     });
 
