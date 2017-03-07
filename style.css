@@ -30,13 +30,6 @@ body {
   top:0;
 }
 
-.movinonup{
-
-}
-/*.flappy{
-  animation: MoveUpDown 1s linear reverse;
-}*/
-
 .belly {
   width: 240px;
   background: #deddd0;
@@ -79,6 +72,24 @@ body {
   border-top-left-radius: 50%;
 }
 
+.cover span {
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 2;
+}
+
+.eyemovin{
+  top:0;
+}
+
+.cover span:nth-child(1) {left: 60px;     transition:all 2.4s;}
+
+.cover span:nth-child(2) {right: 60px;   transition:all 1.4s;}
+
+
 .eyes span {
   width: 40px;
   height: 40px;
@@ -102,6 +113,8 @@ body {
   top: 8px;
   left: 9px;
 }
+
+
 
 .beak span:nth-child(1) {
   width: 35px;

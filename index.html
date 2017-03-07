@@ -18,6 +18,11 @@
             <span></span>
           </div>
 
+          <div class="cover">
+            <span></span>
+            <span></span>
+          </div>
+
         <div class="eyes">
           <span></span>
           <span></span>
@@ -49,19 +54,22 @@
     const fly = document.querySelector('.penguin_container');
     const wingsRight = document.querySelector('.wings span:nth-child(2)');
     const wingsLeft = document.querySelector('.wings span:nth-child(1)');
+    const cover = document.querySelector('.cover span:nth-child(1)');
     const bodyRect = document.body.getBoundingClientRect();
     const y = fly.getBoundingClientRect();
 
     fly.addEventListener('mouseover', () => {
       fly.classList.add('movin');
-      wingsRight.classList.add('flappy-right')
-      wingsLeft.classList.add('flappy-left')
+      wingsRight.classList.add('flappy-right');
+      wingsLeft.classList.add('flappy-left');
+      cover.classList.add('eyemovin');
     });
 
     fly.addEventListener('mouseout', () => {
       fly.classList.remove('movin');
       wingsRight.classList.remove('flappy-right');
       wingsLeft.classList.remove('flappy-left');
+      cover.classList.remove('eyemovin');
       // fly.style.bottom = y - bodyRect + "px";
     });
 
