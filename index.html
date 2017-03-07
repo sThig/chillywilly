@@ -55,6 +55,8 @@
     const wingsRight = document.querySelector('.wings span:nth-child(2)');
     const wingsLeft = document.querySelector('.wings span:nth-child(1)');
     const cover = document.querySelector('.cover span:nth-child(1)');
+    const cover2 = document.querySelector('.cover span:nth-child(2)');
+    const cover3 = document.querySelector('.cover');
     const bodyRect = document.body.getBoundingClientRect();
     const y = fly.getBoundingClientRect();
 
@@ -62,7 +64,9 @@
       fly.classList.add('movin');
       wingsRight.classList.add('flappy-right');
       wingsLeft.classList.add('flappy-left');
-      cover.classList.add('eyemovin');
+      // cover.classList.add('eyemovin');
+      // cover2.classList.add('eyemovin');
+      cover3.classList.add('eyemovin');
     });
 
     fly.addEventListener('mouseout', () => {

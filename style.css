@@ -79,15 +79,26 @@ body {
   border-radius: 50px;
   position: absolute;
   z-index: 2;
+
+  transition:all 1.4s;
 }
 
 .eyemovin{
-  top:0;
+  top: 158px;;
+
 }
 
-.cover span:nth-child(1) {left: 60px;     transition:all 2.4s;}
+.cover span:nth-child(1) {
+  left: 60px;
+  top: 100px;
+  transition:all 1.4s;
+}
 
-.cover span:nth-child(2) {right: 60px;   transition:all 1.4s;}
+.cover span:nth-child(2) {
+  right: 60px;
+  top: 158px;
+  transition:all 1.4s;
+}
 
 
 .eyes span {
